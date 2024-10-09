@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.titulo {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+/* ============  Header   ============  */
+
+.header {
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.menu a {
+  padding: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.navigation_link {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.navigation_link:hover {
+  color: #3dc721;
+}
+
+.navigation_link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: #3dc721;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+
+.navigation_link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.button-inscreva-se {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3dc721;
+  background: #f4f4f4;
+  border: 2px solid #3dc721;
+  border-radius: 24px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-inscreva-se:hover {
+  background-color: #3dc721;
+  color: white;
+}
+
+/* ============  Sobre  ============  */
+.container-sobre {
+  margin: 60px 0px;
+}
+.sobre-titulo {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.blog {
+  font-family: "Damion", cursive;
+  font-weight: 100;
+  font-size: 42px;
+  color: #3dc721;
+  padding-right: 13px;
+}
+
+.receitas {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.sobre-paragrafo {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+
+/* ============  Artigo em destaque  ============  */
+
+.container-destaque {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.card {
+  width: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  margin: 0 auto;
+}
+
+.card h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card p {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b4b4b;
+  margin: 10px 0 20px;
+}
+
+.card button {
+  padding: 10px 16px;
+  background-color: #3dc721;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.card button:hover {
+  background-color: #2c8919;
+}
+/* ============  sidebar  ============  */
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-sidebar {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.card-sidebar h3 {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.card-sidebar p {
+  font-size: 10px;
+  color: #4b4b4b;
+}
+
+.card-sidebar:hover {
+  transform: scale(1.07);
+}
+
+/* ============  Novo artigos  ============  */
+
+.grid-container {
+  display: grid;
+  font-family: "Inter", sans-serif;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.grid-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.grid-card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid-card h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.grid-card p {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #4b4b4b;
+}
+
+.grid-card button {
+  padding: 8px 12px;
+  background-color: #3dc721;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.grid-card button:hover {
+  background-color: #2c8919;
+}
+
+/* ============  footer  ============  */
+
+footer {
+  background-color: #e0e0e0;
+  height: 100px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+}
+
+footer img {
+  color: #4b4b4b;
+  width: 20px;
+  margin-right: 5px;
+}
+
+footer p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #4b4b4b;
+}
